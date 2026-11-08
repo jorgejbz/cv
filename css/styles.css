@@ -1,0 +1,483 @@
+        /* ===== RESET Y VARIABLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* ===== CONTENEDOR PRINCIPAL ===== */
+        .cv-container {
+            max-width: 1200px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 20, 40, 0.15), 0 6px 12px rgba(0, 0, 0, 0.05);
+            padding: clamp(25px, 5vw, 45px);
+            position: relative;
+            z-index: 10;
+            border: 1px solid #e9ecf0;
+        }
+
+        /* ===== HEADER PROFESIONAL ===== */
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+
+        .name-title {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .name-title h1 {
+            font-size: clamp(2.2rem, 6vw, 3.2rem);
+            font-weight: 700;
+            color: #0a2540;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .name-title .subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            font-weight: 400;
+            color: #4a5568;
+            margin-top: 5px;
+        }
+
+        .contact-info {
+            background-color: #f8fafd;
+            padding: clamp(15px, 3vw, 20px) clamp(18px, 4vw, 28px);
+            border-radius: 60px;
+            border: 1px solid #dde3e9;
+            display: flex;
+            flex-wrap: wrap;
+            gap: clamp(15px, 3vw, 30px);
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: clamp(0.9rem, 2.2vw, 1rem);
+            color: #1e293b;
+            font-weight: 500;
+            white-space: nowrap;
+            flex-wrap: wrap;
+        }
+
+        .contact-info i {
+            font-style: normal;
+            font-weight: 600;
+            color: #2c3e6d;
+            background: #e6ecf5;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        /* ===== LAYOUT DE DOS COLUMNAS ===== */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: clamp(25px, 5vw, 45px);
+            margin-top: 20px;
+        }
+
+        /* ===== COLUMNA IZQUIERDA ===== */
+        .left-column {
+            background-color: #f9fbfd;
+            padding: clamp(20px, 4vw, 28px) clamp(18px, 3.5vw, 25px);
+            border-radius: 20px;
+            border: 1px solid #e4eaf1;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section h2 {
+            font-size: clamp(1.3rem, 3.5vw, 1.6rem);
+            font-weight: 600;
+            color: #0a2540;
+            border-bottom: 3px solid #cbd5e1;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section h2 span {
+            background-color: #2c3e6d;
+            color: white;
+            font-size: 1rem;
+            padding: 3px 10px;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+
+        /* Technical Stack - como chips */
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .tech-stack li {
+            background: white;
+            border: 1px solid #d0d9e4;
+            padding: 8px 16px;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #1e2f4a;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            transition: all 0.1s ease;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 16px;
+            padding-left: 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #2d3a4f;
+        }
+
+        .info-list strong {
+            color: #0a2540;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 4px;
+            font-size: 1rem;
+        }
+
+        .info-list .date {
+            color: #64748b;
+            font-size: 0.85rem;
+            font-weight: 400;
+            margin-top: 2px;
+        }
+
+        /* ===== COLUMNA DERECHA ===== */
+        .right-column .section {
+            background: #ffffff;
+            padding: 0;
+            border: none;
+            box-shadow: none;
+        }
+
+        .job, .project {
+            margin-bottom: 30px;
+        }
+
+        .job-header, .project-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .job-header h3, .project-header h3 {
+            font-size: clamp(1.2rem, 3vw, 1.4rem);
+            font-weight: 600;
+            color: #0a2540;
+        }
+
+        .company, .project-context {
+            font-weight: 500;
+            color: #2c3e6d;
+            background-color: #eef3fa;
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 0.9rem;
+        }
+
+        .date {
+            color: #64748b;
+            font-weight: 400;
+            font-size: 0.9rem;
+            margin-left: auto;
+            white-space: nowrap;
+        }
+
+        .job ul, .project ul {
+            list-style: none;
+            margin-top: 12px;
+        }
+
+        .job ul li, .project ul li {
+            margin-bottom: 8px;
+            padding-left: 24px;
+            position: relative;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #334155;
+        }
+
+        .job ul li::before, .project ul li::before {
+            content: "•";
+            color: #2c3e6d;
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 6px;
+            top: -2px;
+        }
+
+        /* Summary */
+        .summary {
+            background-color: #f5f9ff;
+            padding: clamp(20px, 4vw, 25px);
+            border-radius: 18px;
+            border-left: 5px solid #2c3e6d;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #1e2f4a;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* ===== BOTONES FLOTANTES ===== */
+        .pdf-button {
+            position: fixed;
+            bottom: clamp(20px, 4vw, 35px);
+            right: clamp(20px, 4vw, 35px);
+            background-color: #0a2540;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: clamp(12px, 3vw, 18px) clamp(20px, 5vw, 32px);
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(10, 37, 64, 0.25);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid #ffffff30;
+            transition: all 0.2s ease;
+            letter-spacing: 0.3px;
+        }
+
+        .pdf-button:hover {
+            background-color: #1e3a5f;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px rgba(10, 37, 64, 0.35);
+        }
+
+        .pdf-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 5px 12px rgba(10, 37, 64, 0.3);
+        }
+
+        .pdf-button::before {
+            content: "📄";
+            font-size: 1.3rem;
+        }
+
+        /* Botón de idioma (ahora en la izquierda) */
+        .lang-button {
+            position: fixed;
+            bottom: clamp(20px, 4vw, 35px);
+            left: clamp(20px, 4vw, 35px);
+            background-color: #ffffff;
+            color: #0a2540;
+            border: 2px solid #0a2540;
+            border-radius: 50px;
+            padding: clamp(10px, 2.5vw, 14px) clamp(18px, 4vw, 28px);
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .lang-button:hover {
+            background-color: #0a2540;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(10, 37, 64, 0.2);
+        }
+
+        .lang-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .lang-button::before {
+            content: "🌐";
+            font-size: 1.3rem;
+        }
+
+        /* ===== MEDIA QUERIES ===== */
+        @media screen and (max-width: 900px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            .left-column { order: 2; }
+            .right-column { order: 1; }
+            .contact-info { justify-content: center; }
+            .job-header .date { margin-left: 0; }
+        }
+
+        @media screen and (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .contact-info p {
+                white-space: normal;
+                justify-content: center;
+            }
+            .job-header, .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            .date { align-self: flex-start; }
+            .pdf-button, .lang-button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* ===== BLOQUES NUEVOS ===== */
+        .contact-info a { color: inherit; text-decoration: none; }
+        .contact-info a:hover { text-decoration: underline; }
+
+        .summary p { margin-top: 10px; }
+        .summary b, .project li b, .other-list b { color: #0a2540; font-weight: 600; }
+        code { font-family: Consolas, 'Courier New', monospace; font-size: 0.88em; background: #eef3fa; padding: 1px 5px; border-radius: 4px; }
+
+        .stack-group { margin-bottom: 16px; }
+        .stack-group h4 {
+            font-size: 0.78rem; font-weight: 600; color: #64748b;
+            text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;
+        }
+        .stack-group .tech-stack { gap: 6px; }
+        .stack-group .tech-stack li { padding: 5px 12px; font-size: 0.84rem; }
+
+        .edu-desc { margin-top: 5px; color: #475569; }
+
+        .soft-list, .other-list { list-style: none; }
+        .soft-list li, .other-list li {
+            position: relative; padding-left: 20px; margin-bottom: 8px;
+            font-size: 0.93rem; line-height: 1.5; color: #334155;
+        }
+        .soft-list li::before { content: "✓"; position: absolute; left: 2px; color: #2c3e6d; font-weight: 700; }
+        .other-list li::before { content: "•"; position: absolute; left: 6px; color: #2c3e6d; font-weight: 700; }
+
+        .lang-list li { display: flex; justify-content: space-between; border-bottom: 1px dashed #d1d9e6; padding-bottom: 8px; margin-bottom: 8px; }
+        .lang-list li:last-child { border-bottom: none; }
+        .lang-list .level { color: #2c3e6d; }
+
+        .project-header { gap: 8px; }
+        .project-header h3 { margin-right: 4px; }
+        .project-link {
+            display: inline-block; font-size: 0.85rem; color: #2c3e6d;
+            text-decoration: none; margin-bottom: 2px;
+        }
+        .project-link::before { content: "↗ "; }
+        .project-link:hover { text-decoration: underline; }
+        .project ul { margin-top: 8px; }
+
+        /* ===== IMPRESIÓN / PDF (A4) ===== */
+        @page { size: A4; margin: 10mm 12mm; }
+
+        @media print {
+            .pdf-button, .lang-button { display: none !important; }
+            * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            body { background: white; padding: 0; display: block; min-height: 0; font-size: 10pt; }
+            .cv-container { max-width: none; box-shadow: none; border: none; border-radius: 0; padding: 0; }
+
+            .header { padding-bottom: 12px; margin-bottom: 12px; gap: 10px; }
+            .header { flex-wrap: nowrap; }
+            .name-title { min-width: 0; }
+            .name-title h1 { font-size: 20pt; margin-bottom: 2px; }
+            .name-title .subtitle { font-size: 11pt; }
+            .contact-info { border-radius: 12px; padding: 8px 14px; gap: 6px 16px; max-width: 52%; }
+            .contact-info p { font-size: 9pt; gap: 6px; }
+            .contact-info i { width: 20px; height: 20px; font-size: 9pt; }
+
+            .summary { padding: 10px 14px; margin-bottom: 14px; font-size: 9.5pt; line-height: 1.45; }
+
+            .main-content { grid-template-columns: 30% 1fr; gap: 18px; margin-top: 0; }
+            .left-column { padding: 12px; border-radius: 10px; }
+            .section { margin-bottom: 14px; }
+            .section h2 { font-size: 13pt; padding-bottom: 4px; margin-bottom: 10px; border-bottom-width: 2px; }
+
+            .stack-group { margin-bottom: 8px; }
+            .stack-group h4 { font-size: 7.5pt; margin-bottom: 4px; }
+            .stack-group .tech-stack { gap: 4px; }
+            .stack-group .tech-stack li { padding: 2px 8px; font-size: 8pt; box-shadow: none; }
+
+            .info-list li, .soft-list li, .other-list li { font-size: 9pt; margin-bottom: 5px; }
+            .info-list strong { font-size: 9.5pt; }
+
+            .job, .project { margin-bottom: 12px; break-inside: avoid; page-break-inside: avoid; }
+            .job-header, .project-header { margin-bottom: 2px; gap: 6px; }
+            .job-header h3, .project-header h3 { font-size: 11pt; }
+            .company, .project-context { font-size: 7.5pt; padding: 1px 8px; }
+            .project-link { font-size: 8pt; }
+            .project ul, .job ul { margin-top: 4px; }
+            .job ul li, .project ul li { font-size: 9pt; line-height: 1.4; margin-bottom: 3px; padding-left: 16px; }
+            .job ul li::before, .project ul li::before { left: 3px; font-size: 1rem; }
+            .section h2 { break-after: avoid; page-break-after: avoid; }
+
+            footer { margin-top: 4px; padding-top: 4px; font-size: 7.5pt; break-before: avoid; }
+            .right-column .section:last-child, .left-column .section:last-child { margin-bottom: 0; }
+            .job { margin-bottom: 8px; }
+            a { color: inherit; }
+        }

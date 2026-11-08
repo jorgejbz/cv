@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Jorge Juárez - CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<button class="pdf-button" id="descargarPDF">Descargar PDF</button>
+<button class="lang-button" id="cambiarIdioma">Español / English</button>
+
+<div class="cv-container" id="cv-content">
+
+    <header class="header">
+        <div class="name-title">
+            <h1>Jorge Alberto Juárez Bravo</h1>
+            <div class="subtitle" data-t="profesion"></div>
+        </div>
+        <div class="contact-info">
+            <p><i>📍</i> Zapopan, Jalisco</p>
+            <p><i>📱</i> +52 33 1347 6237</p>
+            <p><i>✉️</i> <a href="mailto:jorgejb234@gmail.com">jorgejb234@gmail.com</a></p>
+            <p><i>💻</i> <a href="https://github.com/jorgejbz">github.com/jorgejbz</a></p>
+        </div>
+    </header>
+
+    <section class="summary">
+        <strong data-t="summaryTitle"></strong>
+        <p data-t="summary"></p>
+    </section>
+
+    <div class="main-content">
+
+        <!-- COLUMNA IZQUIERDA -->
+        <aside class="left-column">
+            <div class="section">
+                <h2 data-t="techTitle"></h2>
+                <div id="stack"></div>
+            </div>
+
+            <div class="section">
+                <h2 data-t="educationTitle"></h2>
+                <ul class="info-list">
+                    <li>
+                        <strong data-t="degree"></strong>
+                        <span>Universidad Tecnológica de Jalisco</span>
+                        <div class="date" data-t="eduDate"></div>
+                        <div class="edu-desc" data-t="eduDesc"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 data-t="softTitle"></h2>
+                <ul class="soft-list" id="soft"></ul>
+            </div>
+
+            <div class="section">
+                <h2 data-t="langTitle"></h2>
+                <ul class="info-list lang-list">
+                    <li><span data-t="spanish"></span> <span class="level" data-t="spanishLevel"></span></li>
+                    <li><span data-t="english"></span> <span class="level" data-t="englishLevel"></span></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- COLUMNA DERECHA -->
+        <main class="right-column">
+            <div class="section">
+                <h2 data-t="projectsTitle"></h2>
+                <div id="projects"></div>
+            </div>
+
+            <div class="section">
+                <h2 data-t="expTitle"></h2>
+                <div class="job">
+                    <div class="job-header">
+                        <h3 data-t="job1Title"></h3>
+                        <span class="company">JB TECHNIPACK</span>
+                        <span class="date" data-t="job1Date"></span>
+                    </div>
+                    <ul id="job1List"></ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 data-t="otherTitle"></h2>
+                <ul class="other-list" id="other"></ul>
+            </div>
+        </main>
+    </div>
+
+    <footer id="footer"></footer>
+</div>
+
+<script src="js/lang.js"></script>
+<script src="js/pdf.js"></script>
+
+</body>
+</html>
