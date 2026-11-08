@@ -59,9 +59,9 @@ const PROYECTOS = {
             tags: ['Laravel 12 · PHP', 'API REST', '2026'],
             link: 'github.com/jorgejbz/optiRutaSistemaWeb',
             items: [
-                'Sistema web para una óptica que vende en ruta: clientes con graduación, armazones, pedidos, cobros y anticipos, inventario con historial de movimientos, proveedores, personal por roles y rutas de venta.',
+                'Sistema web para una óptica que vende en ruta: clientes, armazones, pedidos, cobros y anticipos, inventario con historial de movimientos, proveedores, personal por roles y rutas de venta.',
                 '<b>API REST con Laravel Sanctum</b> para la app Android de los vendedores: sincroniza clientes y pedidos capturados en campo, con validación, transacciones y <b>UUID para no duplicar</b> pedidos cuando la app reintenta.',
-                'Cada pedido genera un <b>código QR</b> con su estado, el cobrador asignado y la ubicación del cliente en el mapa.'
+                'Cada pedido genera un <b>código QR</b> con su estado, el cobrador asignado y un enlace a la ubicación del cliente en Google Maps.'
             ]
         },
         {
@@ -131,9 +131,9 @@ const PROYECTOS = {
             tags: ['Laravel 12 · PHP', 'REST API', '2026'],
             link: 'github.com/jorgejbz/optiRutaSistemaWeb',
             items: [
-                'Web system for an optical business that sells door to door: customers with prescriptions, frames, orders, payments and down payments, inventory with movement history, suppliers, role-based staff and sales routes.',
+                'Web system for an optical business that sells door to door: customers, frames, orders, payments and down payments, inventory with movement history, suppliers, role-based staff and sales routes.',
                 '<b>REST API with Laravel Sanctum</b> for the sales reps\' Android app: syncs customers and orders captured in the field, with validation, transactions and <b>UUIDs to avoid duplicate</b> orders when the app retries.',
-                'Each order generates a <b>QR code</b> showing its status, the assigned collector and the customer\'s location on a map.'
+                'Each order generates a <b>QR code</b> showing its status, the assigned collector and a link to the customer\'s location on Google Maps.'
             ]
         },
         {
