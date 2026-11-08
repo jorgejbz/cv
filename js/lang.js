@@ -65,6 +65,16 @@ const PROYECTOS = {
             ]
         },
         {
+            titulo: 'RUSH Sports Bar · Sitio web para cliente',
+            tags: ['Laravel 11 · Bootstrap 5', 'Cliente real', '2026'],
+            items: [
+                'Propuesta de rediseño del sitio de un sports bar en Zapopan: 6 secciones (inicio, eventos, menú, club F1, nosotros y ubicación con mapa), diseño responsivo y botón de WhatsApp en todas las páginas.',
+                '<b>Calendario de F1 automático</b> desde la API de api-sports.io, con caché de 6 horas, tarea programada y calendario de respaldo si la API falla.',
+                '<b>Panel de administración</b> (AdminLTE) con acceso protegido para editar el menú (nombre, precio y foto) sin tocar código; el botón "Apartar mesa" abre WhatsApp con el evento y la fecha ya escritos.',
+                'Levanté los requerimientos con el cliente y preparé la propuesta comercial y la presentación del proyecto.'
+            ]
+        },
+        {
             titulo: 'Bomb Rush · Juego multijugador',
             tags: ['Roblox · Luau', '2026'],
             items: [
@@ -124,6 +134,16 @@ const PROYECTOS = {
                 'Web system for an optical business that sells door to door: customers with prescriptions, frames, orders, payments and down payments, inventory with movement history, suppliers, role-based staff and sales routes.',
                 '<b>REST API with Laravel Sanctum</b> for the sales reps\' Android app: syncs customers and orders captured in the field, with validation, transactions and <b>UUIDs to avoid duplicate</b> orders when the app retries.',
                 'Each order generates a <b>QR code</b> showing its status, the assigned collector and the customer\'s location on a map.'
+            ]
+        },
+        {
+            titulo: 'RUSH Sports Bar · Client website',
+            tags: ['Laravel 11 · Bootstrap 5', 'Real client', '2026'],
+            items: [
+                'Website redesign proposal for a sports bar in Zapopan: 6 sections (home, events, menu, F1 club, about and location with map), responsive design and a WhatsApp button on every page.',
+                '<b>Automatic F1 calendar</b> from the api-sports.io API, with a 6-hour cache, a scheduled task and a fallback calendar if the API fails.',
+                '<b>Admin panel</b> (AdminLTE) with protected access to edit the menu (name, price and photo) without touching code; the "Book a table" button opens WhatsApp with the event and date pre-filled.',
+                'Gathered requirements with the client and prepared the commercial proposal and project presentation.'
             ]
         },
         {
