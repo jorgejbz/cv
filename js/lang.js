@@ -61,17 +61,16 @@ const PROYECTOS = {
             items: [
                 'Sistema web para una óptica que vende en ruta: clientes, armazones, pedidos, cobros y anticipos, inventario con historial de movimientos, proveedores, personal por roles y rutas de venta.',
                 '<b>API REST con Laravel Sanctum</b> para la app Android de los vendedores: sincroniza clientes y pedidos capturados en campo, con validación, transacciones y <b>UUID para no duplicar</b> pedidos cuando la app reintenta.',
-                'Cada pedido genera un <b>código QR</b> con su estado, el cobrador asignado y un enlace a la ubicación del cliente en Google Maps.'
+                'Cada pedido genera un <b>código QR</b> con su estado, el cobrador asignado y la ubicación del cliente en Google Maps.'
             ]
         },
         {
             titulo: 'RUSH Sports Bar · Sitio web para cliente',
             tags: ['Laravel 11 · Bootstrap 5', 'Cliente real', '2026'],
             items: [
-                'Propuesta de rediseño del sitio de un sports bar en Zapopan: 6 secciones (inicio, eventos, menú, club F1, nosotros y ubicación con mapa), diseño responsivo y botón de WhatsApp en todas las páginas.',
+                'Rediseño del sitio de un sports bar en Zapopan: levanté los requerimientos con el cliente y armé la propuesta; 6 secciones (eventos, menú, club F1, ubicación con mapa, etc.), diseño responsivo y WhatsApp en todas las páginas.',
                 '<b>Calendario de F1 automático</b> desde la API de api-sports.io, con caché de 6 horas, tarea programada y calendario de respaldo si la API falla.',
-                '<b>Panel de administración</b> (AdminLTE) con acceso protegido para editar el menú (nombre, precio y foto) sin tocar código; el botón "Apartar mesa" abre WhatsApp con el evento y la fecha ya escritos.',
-                'Levanté los requerimientos con el cliente y preparé la propuesta comercial y la presentación del proyecto.'
+                '<b>Panel de administración</b> (AdminLTE) con acceso protegido para editar el menú (nombre, precio y foto) sin tocar código; el botón "Apartar mesa" abre WhatsApp con el evento y la fecha ya escritos.'
             ]
         },
         {
@@ -140,10 +139,9 @@ const PROYECTOS = {
             titulo: 'RUSH Sports Bar · Client website',
             tags: ['Laravel 11 · Bootstrap 5', 'Real client', '2026'],
             items: [
-                'Website redesign proposal for a sports bar in Zapopan: 6 sections (home, events, menu, F1 club, about and location with map), responsive design and a WhatsApp button on every page.',
+                'Website redesign for a sports bar in Zapopan: gathered requirements with the client and prepared the proposal; 6 sections (events, menu, F1 club, location with map, etc.), responsive design and WhatsApp on every page.',
                 '<b>Automatic F1 calendar</b> from the api-sports.io API, with a 6-hour cache, a scheduled task and a fallback calendar if the API fails.',
-                '<b>Admin panel</b> (AdminLTE) with protected access to edit the menu (name, price and photo) without touching code; the "Book a table" button opens WhatsApp with the event and date pre-filled.',
-                'Gathered requirements with the client and prepared the commercial proposal and project presentation.'
+                '<b>Admin panel</b> (AdminLTE) with protected access to edit the menu (name, price and photo) without touching code; the "Book a table" button opens WhatsApp with the event and date pre-filled.'
             ]
         },
         {

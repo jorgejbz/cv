@@ -455,7 +455,7 @@
 
             .main-content { grid-template-columns: 30% 1fr; gap: 18px; margin-top: 0; }
             .left-column { padding: 12px; border-radius: 10px; }
-            .section { margin-bottom: 14px; }
+            .section { margin-bottom: 10px; }
             .section h2 { font-size: 13pt; padding-bottom: 4px; margin-bottom: 10px; border-bottom-width: 2px; }
 
             .stack-group { margin-bottom: 8px; }
@@ -466,13 +466,15 @@
             .info-list li, .soft-list li, .other-list li { font-size: 9pt; margin-bottom: 5px; }
             .info-list strong { font-size: 9.5pt; }
 
-            .job, .project { margin-bottom: 12px; break-inside: avoid; page-break-inside: avoid; }
+            .job, .project { margin-bottom: 9px; }
+            .job, .project-header, .project-link, .project ul li { break-inside: avoid; page-break-inside: avoid; }
+            .project-header, .project-link { break-after: avoid; page-break-after: avoid; }
             .job-header, .project-header { margin-bottom: 2px; gap: 6px; }
             .job-header h3, .project-header h3 { font-size: 11pt; }
             .company, .project-context { font-size: 7.5pt; padding: 1px 8px; }
             .project-link { font-size: 8pt; }
             .project ul, .job ul { margin-top: 4px; }
-            .job ul li, .project ul li { font-size: 9pt; line-height: 1.4; margin-bottom: 3px; padding-left: 16px; }
+            .job ul li, .project ul li { font-size: 9pt; line-height: 1.32; margin-bottom: 2px; padding-left: 16px; }
             .job ul li::before, .project ul li::before { left: 3px; font-size: 1rem; }
             .section h2 { break-after: avoid; page-break-after: avoid; }
 
