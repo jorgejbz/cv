@@ -168,7 +168,7 @@ const textos = {
     es: {
         profesion: 'Desarrollador de Software · Android y Full Stack',
         summaryTitle: 'Perfil profesional',
-        summary: 'Desarrollador de software (TSU en Ingeniería en Software, UTJ) con proyectos reales en <b>Android nativo</b>, <b>web full stack</b> y videojuegos multijugador. Creé y publiqué como código abierto dos launchers Android: <b>Aura</b>, para TV Box, con herramientas que detectan y eliminan malware de fábrica (probado en equipos reales), y <b>GTS Launcher</b>, para pantallas de auto. Participé en <b>Nutrilife</b>, plataforma de nutrición digital con Laravel, MySQL y app Android. Diagnostico problemas a fondo (ADB, Logcat, redes), documento lo que hago y pruebo cada cambio. Uso herramientas de IA para programar de forma productiva. Busco un puesto de Desarrollador Junior (Android, web o full stack).',
+        summary: 'Desarrollador de software (TSU en Ingeniería en Software, UTJ) con proyectos reales en <b>Android nativo</b>, <b>web full stack</b> y videojuegos multijugador. Creé y publiqué como código abierto dos launchers Android: <b>Aura</b>, para TV Box, con herramientas que detectan y eliminan malware de fábrica (probado en equipos reales), y <b>GTS Launcher</b>, para pantallas de auto. Participé en <b>Nutrilife</b>, plataforma de nutrición digital con Laravel, MySQL y app Android. Diagnostico problemas a fondo (ADB, Logcat, redes), documento lo que hago y pruebo cada cambio. Busco un puesto de Desarrollador Junior (Android, web o full stack).',
         techTitle: 'Stack técnico',
         educationTitle: 'Educación',
         degree: 'TSU en Ingeniería en Software',
@@ -191,7 +191,7 @@ const textos = {
     en: {
         profesion: 'Software Developer · Android & Full Stack',
         summaryTitle: 'Professional Summary',
-        summary: 'Software developer (Associate Degree in Software Engineering, UTJ) with real-world projects in <b>native Android</b>, <b>full stack web</b> and multiplayer games. Built and open-sourced two Android launchers: <b>Aura</b>, for TV boxes, with tools that detect and remove factory-installed malware (tested on real devices), and <b>GTS Launcher</b>, for car head units. Contributed to <b>Nutrilife</b>, a digital nutrition platform built with Laravel, MySQL and an Android app. I troubleshoot in depth (ADB, Logcat, networking), document my work and test every change. I use AI coding tools to work productively. Seeking a Junior Developer role (Android, web or full stack).',
+        summary: 'Software developer (Associate Degree in Software Engineering, UTJ) with real-world projects in <b>native Android</b>, <b>full stack web</b> and multiplayer games. Built and open-sourced two Android launchers: <b>Aura</b>, for TV boxes, with tools that detect and remove factory-installed malware (tested on real devices), and <b>GTS Launcher</b>, for car head units. Contributed to <b>Nutrilife</b>, a digital nutrition platform built with Laravel, MySQL and an Android app. I troubleshoot in depth (ADB, Logcat, networking), document my work and test every change. Seeking a Junior Developer role (Android, web or full stack).',
         techTitle: 'Technical Stack',
         educationTitle: 'Education',
         degree: 'Associate Degree (TSU) in Software Engineering',
