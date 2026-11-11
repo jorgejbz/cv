@@ -8,14 +8,14 @@ const STACK = {
         ['Web / Backend', ['PHP · Laravel', 'Blade · Alpine.js', 'JavaScript', 'React', 'Angular', 'Node.js', 'HTML5 · CSS3']],
         ['Datos', ['MySQL / MariaDB', 'MongoDB', 'SQL']],
         ['Scripting y otros', ['Python', 'PowerShell', 'Bash', 'Luau (Roblox)', 'Arduino']],
-        ['Herramientas', ['Git · GitHub', 'PHPUnit', 'Ollama (LLM local)', 'Claude Code (IA)', 'VS Code', 'NetBeans']]
+        ['Herramientas', ['Git · GitHub', 'PHPUnit', 'Ollama (LLM local)', 'VS Code', 'NetBeans']]
     ],
     en: [
         ['Android', ['Java', 'Android SDK', 'Gradle', 'ADB / Logcat', 'Android Studio', 'APK signing & releases']],
         ['Web / Backend', ['PHP · Laravel', 'Blade · Alpine.js', 'JavaScript', 'React', 'Angular', 'Node.js', 'HTML5 · CSS3']],
         ['Data', ['MySQL / MariaDB', 'MongoDB', 'SQL']],
         ['Scripting & other', ['Python', 'PowerShell', 'Bash', 'Luau (Roblox)', 'Arduino']],
-        ['Tools', ['Git · GitHub', 'PHPUnit', 'Ollama (local LLM)', 'Claude Code (AI)', 'VS Code', 'NetBeans']]
+        ['Tools', ['Git · GitHub', 'PHPUnit', 'Ollama (local LLM)', 'VS Code', 'NetBeans']]
     ]
 };
 
